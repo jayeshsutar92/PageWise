@@ -1,4 +1,4 @@
-# Product Browser
+# PageWise
 
 A full-stack product browser for 200,000 products, built with FastAPI, PostgreSQL, SQLAlchemy 2.x, Alembic, React, Vite, TypeScript, and Tailwind CSS.
 
