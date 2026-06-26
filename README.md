@@ -1,6 +1,3 @@
-Below is a professional README draft based on the current implementation. I did not modify any project files.
-
-```markdown
 # Product Browser
 
 A full-stack product browser for 200,000 products, built with FastAPI, PostgreSQL, SQLAlchemy 2.x, Alembic, React, Vite, TypeScript, and Tailwind CSS.
