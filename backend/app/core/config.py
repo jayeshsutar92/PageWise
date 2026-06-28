@@ -1,16 +1,23 @@
 from functools import lru_cache
+from pathlib import Path
 from typing import Annotated
 
 from pydantic import field_validator
 from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+
 class Settings(BaseSettings):
     database_url: str = "postgresql+psycopg://products:products@localhost:5432/products"
-    backend_cors_origins: Annotated[list[str], NoDecode] = ["http://localhost:5173"]
+    backend_cors_origins: Annotated[list[str], NoDecode] = [
+        "http://localhost:5173",
+        "https://page-wise-cyan.vercel.app",
+    ]
 
     model_config = SettingsConfigDict(
-        env_file=".env",
+        env_file=BASE_DIR / ".env",
         env_file_encoding="utf-8",
         extra="ignore",
     )
