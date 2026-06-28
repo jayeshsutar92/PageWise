@@ -218,6 +218,11 @@ Expected response:
 {"status":"ok"}
 ```
 
+## Deployed Links
+
+- Frontend: https://page-wise-cyan.vercel.app/
+- Backend: https://pagewise-0nbx.onrender.com
+
 ## Database Migrations
 
 Alembic configuration lives in:
