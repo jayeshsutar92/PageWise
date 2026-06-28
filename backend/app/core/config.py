@@ -7,7 +7,7 @@ from pydantic_settings import BaseSettings, NoDecode, SettingsConfigDict
 
 class Settings(BaseSettings):
     database_url: str = "postgresql+psycopg://products:products@localhost:5432/products"
-    backend_cors_origins: Annotated[list[str], NoDecode] = ["http://localhost:5173", "https://page-wise-azure.vercel.app/"]
+    backend_cors_origins: Annotated[list[str], NoDecode] = ["http://localhost:5173"]
 
     model_config = SettingsConfigDict(
         env_file=".env",
